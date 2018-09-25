@@ -1,0 +1,25 @@
+/*css linkado ou externo zero*/
+p{color:green; font-size: 30px;}
+
+/* backgroud-color - define a cor de fundo
+  backgroud-image - insere uma imagem como fundo
+  backgroud-size - configura o tamanho da imagem
+  backgroud-position - define a posicao da imagem em relacao a caixa
+  backgroud-attachment - define se a imagem de fundo rolara com a tabel
+  */
+
+  body{background-color: gray}
+/*
+  body{
+    background-image: url('img.jpg');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: 270px 300px; largura * altura
+  }*/
+
+  ul{
+    /*list-style-type: lower-greek;
+    list-style-position:  outside;*/
+    list-style-image: url('dois.jpg');
+  }

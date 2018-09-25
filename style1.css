@@ -1,0 +1,84 @@
+*{margin: 0;padding: 0;}
+
+.container-principal {font-family: 'Comic Sans MS'; color:#777;}
+
+/* definir as propriedades do topo */
+header{width: 100%; height: 100px; background-color: #fff; position: relative; top: 0;}
+
+/* definr as propriedades da logo */
+.logo{position: absolute; width: 109px; height: auto;}
+.logo img{width: 90%; margin-left: 10%;}
+
+/* definir as propriedades do menu */
+nav {position: absolute; right: 30px; bottom: 0px;}
+nav ul li {float: left; color: #fff; width: auto; margin: 0.8em; font-size: 1.2em;
+  font-family: 'comic sans ms'; list-style: none;}
+nav ul li a {text-decoration: none; color: #bbb;}
+nav ul li a:houver{color: #b13030}
+
+/* definir as propriedades da imagem principal */
+#banner{width: 100%;}
+#banner img{width: 100%; margin-bottom: 0;}
+
+/*definir as propriedades dos pop'ups */
+.modalDialog{
+  position: fixed;
+  font-family: 'Comic Sans MS';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(181, 9, 9, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease-in;  /* renderizacao Chrome e Safari */
+  -moz-transition: opacity 400ms case-in; /* renderizacao Firefox */
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+  display: none;
+}
+
+.modalDialog: target{
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modalDialog div{
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.modalDialog p{
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.modalDialog img{
+  width: 50%;
+  position: relative;
+  margin-left: 25%;
+}
+
+.close{
+  background-color: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+
+.close:hover{
+  background-color: #b50909;
+}
