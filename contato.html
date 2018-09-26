@@ -8,7 +8,8 @@
   <!-- favicon 32px 32px 72px resolucao-->
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-png"/>
 </head>
-<body>
+
+<body class="color-page">
   <div class="container-principal" id="topo">
     <header>
       <div class="logo">
@@ -20,13 +21,50 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#topo">Clientes</a></li>
+          <li><a href="clientes.html">Clientes</a></li>
           <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="#topo">Contato</a></li>
+          <li><a href="#hahaha">Contato</a></li>
           <li><a href="blablabla.html">Bla Bla Bla</a></li>
         </ul>
       </nav>
     </header>
+
+    <div class="img-titulo"><img src="assets/images/contato.png" alt="imagem de contato"></div>
+
+    <section id="txt-contato">
+      <form name="meu_form" id="meu_form">
+        <p class="nome">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nomeid" placeholder="Ex: Fulano da Silva" required="required" name="nome"/>
+        </p>
+
+        <p class="fone">
+          <label for="fone">Telefone:</label><br>
+          <input type="phone" id="foneid" placeholder="(xx)x xxxx-xxxx" name="fone"/>
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="emailid" placeholder="funado@mail.com" name="email" required="required"/>
+        </p>
+
+        <p>
+          <textarea placeholder="mensagem" required="required"></textarea>
+        </p>
+
+        <button type="submit" form="meu_form">Enviar</button>
+
+      </form>
+
+      <div id="conta-data">
+        <h4>Code - Desenvolvimento de Sites</h4>
+        <h5><img src="assets/images/iconAdress.png" alt="endereço"><br>Avenida Novos Conheciementos n. 2018</h5>
+        <h5><img src="assets/images/iconTelefone.png" alt="telefone"><br>+ 55 65 9 9999-9999</h5>
+        <h5><img src="assets/images/iconContato.png" alt="contato"><br>contato@code.com.br</h5>
+        <h5><img src="assets/images/iconFacebook.png" alt="facebook"><br>facebook.com\codedev</h5>
+        <h5><img src="assets/images/iconInstagram.png" alt="instagram"><br>@codedev</h5>
+      </div>
+    </section>
 
   </body>
   </html>
