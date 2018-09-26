@@ -163,3 +163,42 @@ footer .footer-text a{
 #clientes-code .config-clientes p a{
   color:#111;
 }
+
+/*definir as propriedades da pagina sobre */
+#container-sobre{
+  width:65%;
+  margin-left:5%;
+  float: left;
+  position: relative;
+  height: 80%;
+ background-color: #fff;
+ top: 10%;
+}
+
+#txt-sobre{
+  width:40%;
+  float: left;
+  position: relative;
+  padding: 5%
+}
+
+#txt-sobre p{
+  width:100%;
+  position: relative;
+  float: left;
+}
+
+#txt-sobre dl{
+  width: 50%;
+}
+
+#img-conteudo-sobre{
+  width: 45%;
+  position: relative;
+  float: left;
+  padding: 2%
+}
+
+#img-conteudo-sobre img{
+  width: 100%;
+}
