@@ -8,6 +8,7 @@
       body{
         background: #ffa900;  / *aff900 verde limao */
         font-family: sans-serif;
+        text-align: center;
       }
 
       div{
@@ -17,6 +18,26 @@
         border-radius: 10px; /* deixar a borda redonda */
         padding: 20px;
         margin: 0 auto;
+        margin-top: 3px;
+        box-sizing: border-box;
+      }
+
+      .conteudo-pequeno{
+        width: 500px;
+        display: inline-block; /* manter na mesma linha */
+      }
+
+      .conteudo-grnde{
+        width: 1000px;
+        display: block;
+      }
+
+      .fundo-cinza{
+        background: lightgray;
+      }
+
+      #titulo-unico{
+        color: blueviolet;
       }
 
       h1{
@@ -32,11 +53,27 @@
   </head>
 
   <body>
-    <div>
+    <div class="conteudo-pequeno">
+      <h1 id="titulo-unico">Isto é um Título</h1>
+      <img src="assets/imagens/microsoft.jpg" width="200" alt="Isso é uma imagem">
+      <p>Isto é um parágrafo de texto</p>
+      <a href="https://mva.microsoft.com">Este é um link para outra página</a>
+    </div>
+
+    <div class="conteudo-pequeno fundo-cinza">
       <h1>Isto é um Título</h1>
       <img src="assets/imagens/microsoft.jpg" width="200" alt="Isso é uma imagem">
       <p>Isto é um parágrafo de texto</p>
       <a href="https://mva.microsoft.com">Este é um link para outra página</a>
+    </div>
+
+    <div class="conteudo-grnde">
+      <input type="text" onchange="mensagem = this.value" placeholder="Insira aqui seu texto">
+      <input type="password" placeholder="********">
+      <input type="date">
+      <input type="color">
+      <button onclick="alert(mensagem)">Enviar Conteudo</buttom>
+
     </div>
 
 
